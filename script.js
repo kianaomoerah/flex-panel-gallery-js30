@@ -7,11 +7,9 @@ function toggleOpen() {
 function toggleActive(e) {
     // console.log(e.propertyName)
     // shows us what transition is ending (we see both font-size and flex-grow)
-
-    if(e.propertyName.includes('flex')){
+    if (e.propertyName.includes('flex')){
         this.classList.toggle('open-active');
-    };
-
+    }
 }
 
 panels.forEach(panel => panel.addEventListener('click', toggleOpen));
